@@ -1,0 +1,8 @@
+{
+  "name": "typescript-sandbox",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^2.7.2"
+  }
+}
