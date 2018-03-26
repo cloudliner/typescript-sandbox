@@ -2,9 +2,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome",
+      "file": "${workspaceFolder}/src/index.html?tsfile=${file}",
+      "webRoot": "${workspaceFolder}",
+      "trace" :true,
+      "sourceMaps": true,
+      "runtimeArgs": [
+          "--allow-file-access-from-files"
+      ]
+    },
+    {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Node",
       "program": "${file}"
     }
   ]
