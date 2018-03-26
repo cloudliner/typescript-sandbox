@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="id">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -7,16 +7,15 @@
   <script>
     var arg = new Object;
     var pair = location.search.substring(1).split('&');
-    for(var i = 0; pair[i]; i ++) {
+    for (var i = 0; pair[i]; i++) {
       var kv = pair[i].split('=');
-      arg[kv[0]]=kv[1];
+      arg[kv[0]] = kv[1];
     }
     function loadTypeScript() {
       var tsFilePath = arg['tsfile'];
       console.log('TypeScript File: ', tsFilePath);
       if (tsFilePath) {
-        var jsFilePath = tsFilePath.replace('/src/', '/dist/');
-        jsFilePath = jsFilePath.replace('.ts', '.js');
+        var jsFilePath = tsFilePath.replace('/src/', '/dist/').replace('.ts', '.js');
         console.log('JypeScript File: ', jsFilePath);
         var script = document.createElement('script');
         script.src = jsFilePath;
@@ -24,6 +23,10 @@
       }
     }
   </script>
+
+  <!-- for List 2-14 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   <title>TypeScript Web Test</title>
 </head>
   <body onload="JavaScript:loadTypeScript();">
