@@ -17,7 +17,12 @@
       "type": "node",
       "request": "launch",
       "name": "Node",
-      "program": "${file}"
+      "trace" :true,
+      "sourceMaps": true,
+      "program": "${file}",
+      "outFiles": [
+        "${workspaceRoot}/dist/**/*.js"
+      ]
     }
   ]
 }
