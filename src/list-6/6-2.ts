@@ -5,7 +5,7 @@ const portNumber = "8080";
 function requestListener(request: http.ServerRequest, response: http.ServerResponse) {
   response.writeHead(200, { "Content-Type": "text/plain" });
   response.write(`Method: ${ request.method }\n`);
-  response.write(`URL: ${ request.url }\n`)
+  response.write(`URL: ${ request.url }\n`);
   response.write("Response Text Here");
   response.end();
 }
