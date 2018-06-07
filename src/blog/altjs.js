@@ -1,14 +1,14 @@
 var maxCount = 3;
-var baseMessage = 'Hello!';
+var baseMessage = "Hello!";
 
-function Messenger(name) {
+function Person(name) {
   this.name = name;
 }
-Messenger.prototype.say = function (message, count) {
+Person.prototype.say = function (message, count) {
   for (var i = 1; i <= count; i++) {
     console.log(this.name + " says " + message + " " + i);
   }
 }
 
-var messengaer = new Messenger('Script');
-messengaer.say(baseMessage, maxCount);
+var person = new Person("Bill");
+person.say(baseMessage, maxCount);

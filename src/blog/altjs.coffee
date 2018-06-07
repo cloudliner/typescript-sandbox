@@ -1,11 +1,11 @@
 maxCount = 3;
-baseMessage = 'Hello!';
+baseMessage = "Hello!";
 
-class Messenger
+class Person
   constructor: (@name) ->
   say: (message, count) ->
     for i in [1..count]
       console.log """#{@name} says #{message} #{i}""";
 
-messengaer = new Messenger 'Script';
-messengaer.say baseMessage, maxCount;
+person = new Person "Bill";
+person.say baseMessage, maxCount;
