@@ -1,6 +1,6 @@
 interface IMessage {
-  count: number;
   text: string;
+  count: number;
 }
 
 var message: IMessage = {
