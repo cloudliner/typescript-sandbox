@@ -12,4 +12,4 @@ class Person {
   }
 }
 const person = new Person("Bill", 62);
-person.say({ text: "Hello!", count: 3, });
+person.say({ text: "Hello!", count: 3 });
