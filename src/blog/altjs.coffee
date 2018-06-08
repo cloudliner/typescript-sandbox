@@ -1,6 +1,3 @@
-maxCount = 3;
-baseMessage = "Hello!";
-
 class Person
   constructor: (@name) ->
   say: (message, count) ->
@@ -8,4 +5,4 @@ class Person
       console.log """#{@name} says #{message} #{i}""";
 
 person = new Person "Bill";
-person.say baseMessage, maxCount;
+person.say "Hello!", 3;

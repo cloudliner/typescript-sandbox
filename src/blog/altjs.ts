@@ -1,6 +1,3 @@
-const maxCount = 3;
-const baseMessage = "Hello!";
-
 class Person {
   constructor(private name: string) {}
   public say(message: string, count: number) {
@@ -11,4 +8,4 @@ class Person {
 }
 
 const person = new Person("Bill");
-person.say(baseMessage, maxCount);
+person.say("Hello!", 3);
