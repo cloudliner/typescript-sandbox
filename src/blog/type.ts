@@ -1,6 +1,6 @@
 var count: number;
 count = 0;
 count ++;
-count = "Steve";
+count = "Steve"; // コンパイルエラー
 
 console.log(count);
