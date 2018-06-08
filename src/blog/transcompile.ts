@@ -4,7 +4,7 @@ interface IMessage {
 }
 
 var message: IMessage = {
-  count: 3, text: "Hello!",
+  text: "Hello!", count: 3,
 };
 
 var i: number;
