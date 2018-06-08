@@ -1,7 +1,7 @@
 function Person(name) {
   this.name = name;
 }
-Person.prototype.say = function (message, count) {
+Person.prototype.say = function(message, count) {
   for (var i = 1; i <= count; i++) {
     console.log(this.name + " says " + message + " " + i);
   }
